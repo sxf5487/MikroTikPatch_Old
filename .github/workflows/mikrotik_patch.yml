@@ -138,6 +138,7 @@ jobs:
           option-${{ env.LATEST_VERSION }}.npk
           wireless-${{ env.LATEST_VERSION }}-arm.npk
           wireless-${{ env.LATEST_VERSION }}-mmips.npk
+          netinstall.exe
 
 
 
