@@ -103,9 +103,9 @@ jobs:
 
     - name: Patch netinstall.exe
       run: |
-        #sudo -E python3 patch.py netinstall netinstall.exe
-        sudo zip netinstall-$LATEST_VERSION.zip ./netinstall.exe
         sudo -E python3 patch.py netinstall netinstall.exe
+        sudo zip netinstall-$LATEST_VERSION.zip ./netinstall.exe
+      
 
     - name: Get and Patch routeros-${{ env.LATEST_VERSION }}-arm.npk
       run: |
@@ -187,7 +187,7 @@ jobs:
           wireless-${{ env.LATEST_VERSION }}-arm.npk
           zerotier-${{ env.LATEST_VERSION }}-arm.npk
           python3-${{ env.LATEST_VERSION }}-arm.npk
-          netinstall.exe
+          netinstall-${{ env.LATEST_VERSION }}.zip
 
 
 
